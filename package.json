@@ -4,6 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "make-seed":"npx knex seed:make dev --knexfile ./dbconfig/knexfile.js",
+    "seed":"npx knex seed:run --knexfile ./dbconfig/knexfile.js",
+    "migrate":"npx knex migrate:latest --knexfile ./dbconfig/knexfile.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon ./src/server.js"
   },
